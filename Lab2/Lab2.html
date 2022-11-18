@@ -3,7 +3,11 @@
 <head>
 	<style type="text/css">
 		body{background-color: seagreen;}
-		h1{color: whitesmoke; margin-left: 40pt;}
+		#myHeader{
+			color: whitesmoke; 
+			padding: 40pt;
+			text-align: center;
+		}
 		p{font-family: arial;color: navajowhite;}
 		em{font-weight: bold; color: white;}
 		span{color: lightyellow;}
@@ -13,7 +17,7 @@
 	<title></title>
 </head>
 <body>
-	<h1><em>New HTML5 Input Types Demo</em></h1>
+	<h1 id="myHeader">New HTML5 Input Types Demo</h1>
 	<em>This form demonstrates the new HTML5 input types and the placeholder, required and autofocus attributes.</em></p>
 	<form method="post" action="http://www.detail.com">
 
@@ -44,8 +48,6 @@
 
 	<input type="submit" value="submit">
 	<input type="reset" value="clear">
-
-	<a href="">This is a link of the second page.</a>
 
 	</form>
 
