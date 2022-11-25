@@ -1,0 +1,17 @@
+h1{color: whitesmoke; margin-left: 40pt;}
+p{font-family: arial;color: navajowhite;}
+em{font-weight: bold; color: white;}
+span{color: lightyellow;}
+
+		body{background-color:honeydew;}
+		#myHeader{
+			background-color: cadetblue;
+			color: whitesmoke; 
+			padding: 40pt;
+			text-align: center;
+		}
+		.hw2Class{
+			background-color: darkseagreen;
+			color: whitesmoke; 
+			padding: 5pt;
+		}
