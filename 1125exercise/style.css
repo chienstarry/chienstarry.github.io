@@ -1,9 +1,14 @@
 h1{color: whitesmoke; margin-left: 40pt;}
-p{font-family: arial;color: navajowhite;}
+p{font-family: arial;color: navajowhite;
+	padding-top: 50px;
+	padding-right: 30px;
+	padding-bottom: 50px;
+	padding-left:80px}
 em{font-weight: bold; color: white;}
 span{color: lightyellow;}
 
-		body{background-color:honeydew;}
+
+		body{background-color:slategrey;}
 		#myHeader{
 			background-color: cadetblue;
 			color: whitesmoke; 
@@ -15,3 +20,36 @@ span{color: lightyellow;}
 			color: whitesmoke; 
 			padding: 5pt;
 		}
+
+		.sub{position: relative;
+			 left: -1ex}
+
+		.background_image{
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			z-index: 1;
+		}
+
+		.foreground_image{
+			position: absolute;
+			top: 25px;
+			right: 100px;
+			z-index: 2;
+		}
+
+		.text{
+			position: absolute;
+			top: 25px;
+			right: 100px;
+			z-index: 3;
+		}
+
+		div {
+  border: 1px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: lightblue;
+}
