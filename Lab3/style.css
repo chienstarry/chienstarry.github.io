@@ -118,3 +118,11 @@ div {
 		background-color: coral;
 	}
 }
+
+@media print{
+	body{background-color: antiquewhite;}
+	h1  {color: honeydew;}
+	p   {font-size: 10pt;
+		color: deepskyblue;
+		font-family: times, sans-serif;}
+}
