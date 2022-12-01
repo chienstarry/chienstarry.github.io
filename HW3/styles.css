@@ -1,0 +1,33 @@
+@media screen and (min-width: 480px){
+	body{
+		font-family:arial;
+		color: ghostwhite;
+		font-size: 15pt;
+		background-color: coral;
+	}
+}
+
+@media print{
+	body{background-color: mistyrose;
+		font-family:arial;
+		color: antiquewhite;
+		font-size: 15pt;}
+}
+
+body{font-family:arial;
+	color: coral;
+	font-size: 10pt;
+	background-color: ghostwhite;}
+
+.container {
+
+	width: "50%";
+	height: "50%";
+	
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+
+	text-align: center;
+	line-height: 30px;
+}
