@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<input type="button" value="1st input" onClick="alert(int1)">
+	<input type="button" value="2nd input" onClick="alert(int2)">
+	<input type="button" value="blue" onClick="document.body.style.backgroundColor = 'skyblue';">
+	<input type="button" value="green" onClick="document.body.style.backgroundColor = 'darkgreen';">
+	
+	<script type="text/javascript">
+		var int1 = parseInt(window.prompt("Please input the first number:"));
+		var int2 = parseInt(window.prompt("Please input the second number:"));
+		if(int1>int2){
+			document.body.style.backgroundColor = 'lightblue';
+			document.writeln("<h2>firstInput > secondInput</h2>");
+		}else if(int1<int2){
+			document.body.style.backgroundColor = 'lightgreen';
+			document.writeln("<h2>secondInput > firstInput</h2>");
+		}else{
+			document.body.style.backgroundColor = 'lightyellow';
+			document.writeln("<h2>secondInput == firstInput</h2>");
+		}
+	</script>
+
+</body>
+</html>
