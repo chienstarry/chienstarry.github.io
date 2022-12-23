@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+		var first = parseInt(window.prompt("Enter first number"));
+		var second = parseInt(window.prompt("Enter second number"));
+		var third = parseInt(window.prompt("Enter third number"));
+		document.writeln("<p>First number: " + first + "</p>");
+		document.writeln("<p>Second number: " + second + "</p>");
+		document.writeln("<p>Third number: " + third + "</p>");
+
+		var max = maximum(first, second, third);
+		document.writeln("<p>Maximum is: " + max + "</p>");
+		function maximum(x, y, z){
+			return Math.max(x, y, z);
+		}
+	</script>
+</body>
+</html>

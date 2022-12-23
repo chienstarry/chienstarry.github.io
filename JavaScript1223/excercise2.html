@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<form action = "#">
+		<input id = "rollButton" type = "button" value = "Roll Dice">
+	</form>	
+		<p><img id = "die1" src = "die1.png" alt = "blank image">
+		<img id = "die2" src = "die1.png" alt = "blank image">
+		<img id = "die3" src = "die1.png" alt = "blank image">
+		<img id = "die4" src = "die1.png" alt = "blank image">
+		</p>
+		
+	<script>
+		var die1Image, die2Image, die3Image, die4Image;
+
+		function start(){
+			var button = document.getElementById("rollButton");
+			button.addEventListener("click", rollDice, false);
+			die1Image = document.getElementById("die1");
+			die2Image = document.getElementById("die2");
+			die3Image = document.getElementById("die3");
+			die4Image = document.getElementById("die4");
+		}
+// var face
+		function rollDice(){
+			setImage(die1Image);
+			setImage(die2Image);
+			setImage(die3Image);
+			setImage(die4Image);
+		}
+
+		function setImage(dieImg){
+			var dieValue = Math.floor(1 + Math.random() * 6);
+			console.log(dieValue);
+			dieImg.setAttribute("src", "die" + dieValue + ".png");
+			dieImg.setAttribute("alt", "die image with " + dieValue + " spot(s)");
+		}
+
+		window.addEventListener("load", start, false);
+	</script>
+</body>
+</html>
